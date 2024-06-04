@@ -37,8 +37,16 @@
                 document.getElementById("sliders").appendChild(document.createElement("br"));
             }
 
+            // Create a "Generate data" button
+            let generateButton = document.createElement("button");
+            generateButton.innerText = "Generate data";
+            generateButton.onclick = function() {
+                generateDataAndWriteToCsv();
+            };
+            document.getElementById("sliders").appendChild(generateButton);
+
             // Create a "Search" button
-            let button = document.createElement("button");
+            let searchButton = document.createElement("button");
             button.id = "searchButton";
             button.innerText = "Search";
             button.onclick = function() {

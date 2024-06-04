@@ -4,7 +4,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 console.log(`n: ${n}, m: ${m}`);
 
-function generateData() {
+function generateDataAndWriteToCsv() {
     let data = [];
     for (let i = 0; i < m; i++) {
         let row = {};
@@ -31,6 +31,6 @@ function writeDataToCsv(data) {
         .then(() => console.log('The CSV file was written successfully'));
 }
 
-data = generateData();
+data = generateDataAndWriteToCsv();
 x = rankObjects(data);
 writeDataToCsv(data);
