@@ -1,6 +1,6 @@
 # FCA Continuous Search
 
-this is just a test
+this is just a test 2
 
 This project is a JavaScript-based program to illustrate an interface that could help users to understand their preferences on objects given preferences on attributes.
 
