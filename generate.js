@@ -1,7 +1,3 @@
-const faker = require('faker');
-const fs = require('fs');
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-
 console.log(`n: ${n}, m: ${m}`);
 
 function generateDataAndWriteToCsv() {
