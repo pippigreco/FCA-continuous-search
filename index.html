@@ -45,9 +45,20 @@
             searchButton.onclick = function() {
                 x = rankObjects(data);
                 console.log(x);
+
+                // Sort the data according to x
+                let sortedData = data.map((row, i) => ({...row, rank: x[i]}));
+                sortedData.sort((a, b) => b.rank - a.rank);
+
+                // Display the sorted data in the output field
+                let outputField = document.getElementById("output");
+                outputField.innerHTML = JSON.stringify(sortedData, null, 2);
             };
             document.getElementById("sliders").appendChild(searchButton);
         </script>
+    </div>
+    <div id="output">
+        <!-- Sorted data will be displayed here -->
     </div>
 </body>
 </html>
