@@ -5,7 +5,7 @@ function generateData() {
     for (let i = 0; i < m; i++) {
         let row = {};
         for (let j = 0; j < n; j++) {
-            row[`a${j+1}`] = Math.round(Math.random());
+            row[j] = Math.round(Math.random());
         }
         data.push(row);
     }

@@ -6,7 +6,7 @@ function rankObjects(data) {
     for (let row of data) {
         let sum = 0;
         for (let i = 0; i < n; i++) {
-            sum += c[i] * row[`a${i+1}`];
+            sum += c[i] * row[i];
         }
         x.push(sum);
     }
