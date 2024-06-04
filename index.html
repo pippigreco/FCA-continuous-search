@@ -9,11 +9,11 @@
     <!-- Output of the algorithm will be displayed here -->
     <script>
         // Global variable to hold the values of all sliders
-        var a = Array(5).fill().map(() => Array(n).fill(0));
+        var a = Array(n).fill(0);
 
         // Function to update the global variable when a slider value is changed
-        function updateSliderValue(columnIndex, sliderIndex, value) {
-            a[sliderIndex][columnIndex] = value;
+        function updateSliderValue(sliderIndex, value) {
+            a[sliderIndex] = value;
         }
     </script>
     <div id="sliders">
@@ -21,18 +21,17 @@
         <script>
             // Create a slider for each column
             for (let i = 0; i < n; i++) {
-                for (let j = 0; j < 5; j++) {
-                    let slider = document.createElement("input");
-                    slider.type = "range";
-                    slider.min = "0";
-                    slider.max = "1";
-                    slider.step = "0.25";
-                    slider.value = "0";
-                    slider.oninput = function() {
-                        updateSliderValue(i, j, this.value);
-                    };
-                    document.getElementById("sliders").appendChild(slider);
-                }
+                let slider = document.createElement("input");
+                slider.type = "range";
+                slider.min = "0";
+                slider.max = "1";
+                slider.step = "0.25";
+                slider.value = "0";
+                slider.oninput = function() {
+                    updateSliderValue(i, this.value);
+                };
+                document.getElementById("sliders").appendChild(slider);
+                document.getElementById("sliders").appendChild(document.createElement("br"));
             }
         </script>
     </div>
