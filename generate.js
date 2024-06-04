@@ -34,15 +34,3 @@ function writeDataToCsv(data) {
 const data = generateData();
 x = rankObjects(data);
 writeDataToCsv(data);
-
-function rankObjects(data) {
-    let x = [];
-    for (let row of data) {
-        let sum = 0;
-        for (let i = 0; i < n; i++) {
-            sum += c[i] * row[`a${i+1}`];
-        }
-        x.push(sum);
-    }
-    return x;
-}
