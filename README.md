@@ -9,7 +9,6 @@ Users specify their preferences on the attributes (three attributes in the imple
 ```
 git clone https://github.com/alexhkurz/FCA-continuous-search.git
 cd FCA-continuous-search
-npm install
 open index.html
 ```
 
