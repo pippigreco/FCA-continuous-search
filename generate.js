@@ -1,4 +1,4 @@
-console.log(`n: ${n}, m: ${m}`);
+console.log("generate.js loaded");
 
 function generateData() {
     let data = [];
@@ -13,3 +13,4 @@ function generateData() {
 }
 
 data = generateData();
+console.log(data);
