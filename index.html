@@ -52,7 +52,7 @@
 
                 // Display the sorted data in the output field
                 let outputField = document.getElementById("output");
-                outputField.innerHTML = JSON.stringify(sortedData, null, 2);
+                outputField.innerHTML = sortedData.map(JSON.stringify).join('<br>');
             };
             document.getElementById("sliders").appendChild(searchButton);
         </script>
