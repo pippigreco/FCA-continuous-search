@@ -10,9 +10,9 @@ console.log(`n: ${n}, m: ${m}`);
 
 function generateData() {
     let data = [];
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < m; i++) {
         let row = {};
-        for (let j = 0; j < m; j++) {
+        for (let j = 0; j < n; j++) {
             row[`column${j}`] = faker.random.word();
         }
         data.push(row);
