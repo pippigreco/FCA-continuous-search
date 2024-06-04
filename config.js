@@ -1,4 +1,4 @@
 // Global parameters n and m
-var n = 10;
-var m = 10;
+var n = 3;
+var m = 16;
 console.log("config.js loaded");
