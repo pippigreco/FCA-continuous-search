@@ -2,10 +2,6 @@ const faker = require('faker');
 const fs = require('fs');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-// Load the global parameters n and m from config.js
-const config = require('./config.js');
-const n = config.n;
-const m = config.m;
 console.log(`n: ${n}, m: ${m}`);
 
 function generateData() {
