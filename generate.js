@@ -31,6 +31,6 @@ function writeDataToCsv(data) {
         .then(() => console.log('The CSV file was written successfully'));
 }
 
-const data = generateData();
+data = generateData();
 x = rankObjects(data);
 writeDataToCsv(data);

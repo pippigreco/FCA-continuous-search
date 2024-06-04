@@ -11,6 +11,7 @@
         // Global variables to hold the values of all sliders and the array 'x'
         var a = Array(n).fill(0);
         var x = [];
+        var data = [];
 
         // Function to update the global variable when a slider value is changed
         function updateSliderValue(sliderIndex, value) {
@@ -41,7 +42,7 @@
             button.id = "searchButton";
             button.innerText = "Search";
             button.onclick = function() {
-                rankObjects();
+                x = rankObjects(data);
                 console.log(x);
             };
             document.getElementById("sliders").appendChild(button);
