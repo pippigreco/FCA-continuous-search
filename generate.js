@@ -1,6 +1,6 @@
 console.log(`n: ${n}, m: ${m}`);
 
-function generateDataAndWriteToCsv() {
+function generateData() {
     let data = [];
     for (let i = 0; i < m; i++) {
         let row = {};
@@ -12,4 +12,4 @@ function generateDataAndWriteToCsv() {
     return data;
 }
 
-data = generateDataAndWriteToCsv();
+data = generateData();
