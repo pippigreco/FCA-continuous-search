@@ -32,7 +32,7 @@ function writeDataToCsv(data) {
 }
 
 const data = generateData();
-const x = rankObjects(data);
+x = rankObjects(data);
 writeDataToCsv(data);
 
 function rankObjects(data) {
