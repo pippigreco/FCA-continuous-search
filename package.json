@@ -1,0 +1,13 @@
+{
+  "name": "algorithm-illustration",
+  "version": "1.0.0",
+  "description": "A JavaScript-based program to illustrate an algorithm",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "faker": "^5.5.3",
+    "csv-writer": "^1.7.0"
+  }
+}
