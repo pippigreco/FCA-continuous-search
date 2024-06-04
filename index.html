@@ -34,6 +34,15 @@
                 document.getElementById("sliders").appendChild(slider);
                 document.getElementById("sliders").appendChild(document.createElement("br"));
             }
+
+            // Create a "Search" button
+            let button = document.createElement("button");
+            button.id = "searchButton";
+            button.innerText = "Search";
+            button.onclick = function() {
+                console.log(x);
+            };
+            document.getElementById("sliders").appendChild(button);
         </script>
     </div>
 </body>
