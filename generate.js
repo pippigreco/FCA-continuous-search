@@ -13,7 +13,7 @@ function generateData() {
     for (let i = 0; i < m; i++) {
         let row = {};
         for (let j = 0; j < n; j++) {
-            row[`column${j}`] = Math.round(Math.random());
+            row[`a${j+1}`] = Math.round(Math.random());
         }
         data.push(row);
     }
