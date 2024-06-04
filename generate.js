@@ -1,6 +1,6 @@
 console.log("generate.js loaded");
 
-function generateData() {
+function generateRandomData() {
     let data = [];
     for (let i = 0; i < m; i++) {
         let row = {};
