@@ -18,6 +18,11 @@ function generateData() {
 }
 
 function writeDataToCsv(data) {
+    if (data.length === 0) {
+        console.error('No data to write to CSV');
+        return;
+    }
+
     const csvWriter = createCsvWriter({
         path: 'data.csv',
         header: Object.keys(data[0]).map(key => ({id: key, title: key})),
