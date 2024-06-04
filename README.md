@@ -4,6 +4,8 @@ This project is a JavaScript-based program to illustrate an interface that could
 
 Users specify their preferences on the attributes (three attributes in the implemented example) and then can create ("Search") a ranked list of objects, each object being identified with the set (list) of attributes it satisfies.
 
+The ranking is obtained by multiplying the incidence relation matrix with the attribute vector.
+
 ## Installation
 
 ```
