@@ -47,12 +47,14 @@
                 console.log(x);
 
                 // Sort the data according to x
-                let sortedData = data.map((row, i) => ({...row, rank: x[i]}));
-                sortedData.sort((a, b) => b.rank - a.rank);
-
-                // Display the sorted data in the output field
+                let sortedData = data.map((row, i) => {
+                    let newRow = Object.values(row);
+                    newRow.push({rank: x[i]});
+                    return newRow;
+                });
+                sortedData.sort((a, b) => b[b.length - 1].rank - a[a.length - 1].rank);
                 let outputField = document.getElementById("output");
-                outputField.innerHTML = sortedData.map(JSON.stringify).join('<br>');
+                outputField.innerHTML = sortedData.map(row => JSON.stringify(row, null, 2)).join('<br>');
             };
             document.getElementById("sliders").appendChild(searchButton);
         </script>
