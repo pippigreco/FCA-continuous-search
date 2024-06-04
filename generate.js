@@ -4,6 +4,7 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 // Load the global parameters n and m from config.js
 const { n, m } = require('./config.js');
+console.log(`n: ${n}, m: ${m}`);
 
 function generateData() {
     let data = [];
