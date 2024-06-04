@@ -13,4 +13,3 @@ function generateDataAndWriteToCsv() {
 }
 
 data = generateDataAndWriteToCsv();
-x = rankObjects(data);
